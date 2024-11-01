@@ -1,6 +1,6 @@
 {
   "name": "rectangular-dust-afterthought",
-  "version": "0.0.5",
+  "version": 1.0.0",
   "scripts": {
     "start": "vite",
     "build": "vite build",
@@ -21,12 +21,9 @@
     "not dead"
   ],
   "engines": {
-    "node": "20.x"
+    "node": "20"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/rectangular-dust-afterthought"
   },
-  "glitch": {
-    "projectType": "generated_static"
-  }
 }
