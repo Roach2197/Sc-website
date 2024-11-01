@@ -1,10 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App'; // Make sure this matches your file structure
+import ReactDOM from 'react-dom/client'; // Updated for React 18
+import App from './App'; // Ensure the path and filename are correct
+import './index.css'; // Optional, if you have a CSS file
 
-ReactDOM.render(
+// Render the App component
+const root = ReactDOM.createRoot(document.getElementById('root')); // Updated for React 18
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root') // Ensure you have a div with id="root" in your index.html
+  </React.StrictMode>
 );
