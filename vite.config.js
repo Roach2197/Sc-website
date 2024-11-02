@@ -4,10 +4,11 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 3000, // You can specify the port here
-  },
+  publicDir: 'public', // Specify the path for the public directory
   build: {
-    outDir: 'dist', // This specifies the output directory for the build
+    outDir: 'dist', // Output directory for the build
+  },
+  server: {
+    port: 3000, // Optional: Define the port if needed
   },
 });
